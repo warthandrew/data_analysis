@@ -1,0 +1,23 @@
+Table,Field,Description
+current_bill,customer_id,unique identifier for the customer using Spendy
+current_bill,bill_id,identifier for each customers bill
+current_bill,amount_billed,"amount Spendy has billed to the customer, this amount could be made up of multiple transactions"
+current_bill,date_due,the due date that the bill should be paid by
+current_bill,date_paid,"the date the bill was paid, null where the bill is not yet paid"
+bill_history,customer_id,unique identifier for the customer using Spendy
+bill_history,bill_id,identifier for each customers bill
+bill_history,amount_billed,"amount Spendy has billed to the customer, this amount could be made up of multiple transactions"
+bill_history,date_due,the due date that the bill should be paid by
+bill_history,date_paid,"the date the bill was paid, null where the bill is not yet paid"
+customer,customer_id,unique identifier for the customer using Spendy
+customer,date_account_opened,date the customers Spendy account was created
+customer,gender,gender of the customer
+transaction_history,customer_id,unique identifier for the customer using Spendy
+transaction_history,transaction_id,unique identifier for each transaction
+transaction_history,date_transaction,date the transaction was made
+transaction_history,amount_transaction,purchase amount of the transaction
+transaction_history,category,shop business category
+transaction_history,merchant_account_age,the age of the account the customer has in the shop where the good are purchased
+transaction_history,address,address of the shipping address used for the purchase
+transaction_history,email_domain,email provider used for the purchase
+transaction_history,due_month,month in which the transaction amount need to be repaid to Spendy
